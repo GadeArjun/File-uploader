@@ -14,20 +14,23 @@ body {
   margin: 20px auto;
   max-width: 400px;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   text-align: center;
 }
+
 .auth-container h1 {
   margin-top: 0;
   font-size: 1.8em;
   color: #333;
 }
+
 .auth-container form {
   display: flex;
   flex-direction: column;
   gap: 15px;
   margin-bottom: 15px;
 }
+
 .auth-container input[type="text"],
 .auth-container input[type="password"] {
   padding: 10px;
@@ -35,10 +38,12 @@ body {
   border-radius: 10px;
   transition: border-color 0.3s ease;
 }
+
 .auth-container input[type="text"]:focus,
 .auth-container input[type="password"]:focus {
   border-color: #3B82F6;
 }
+
 .auth-container button {
   background: linear-gradient(135deg, #3B82F6, #06B6D4);
   color: #fff;
@@ -49,9 +54,11 @@ body {
   text-transform: uppercase;
   transition: transform 0.3s ease;
 }
+
 .auth-container button:hover {
   transform: scale(1.05);
 }
+
 .auth-container a {
   color: #3B82F6;
   text-decoration: none;
@@ -61,6 +68,7 @@ body {
 #mainContainer {
   display: none;
 }
+
 #logoutBtn {
   background: #f44336;
   color: #fff;
@@ -70,6 +78,7 @@ body {
   cursor: pointer;
   margin-bottom: 20px;
 }
+
 #logoutBtn:hover {
   background: #d32f2f;
 }
@@ -86,6 +95,7 @@ body {
   position: relative;
   overflow: hidden;
 }
+
 .upload-container::before {
   content: "";
   position: absolute;
@@ -97,6 +107,7 @@ body {
   clip-path: polygon(100% 0, 100% 100%, 0 100%);
   opacity: 0.2;
 }
+
 .upload-container h1 {
   margin-top: 0;
   color: #333;
@@ -104,12 +115,14 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
 .upload-container form {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
 }
+
 .upload-container input[type="file"] {
   margin-bottom: 10px;
   width: 100%;
@@ -118,9 +131,11 @@ body {
   border-radius: 10px;
   transition: border-color 0.3s ease;
 }
+
 .upload-container input[type="file"]:hover {
   border-color: #06B6D4;
 }
+
 .upload-container button {
   background: linear-gradient(135deg, #3B82F6, #06B6D4);
   color: #fff;
@@ -133,6 +148,7 @@ body {
   letter-spacing: 1px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .upload-container button:hover {
   transform: scale(1.05);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -149,10 +165,17 @@ body {
   display: none;
   margin: 20px auto;
 }
+
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
+
 #message {
   text-align: center;
   margin-top: 10px;
@@ -168,17 +191,20 @@ body {
   gap: 10px;
   margin-top: 15px;
 }
+
 .search-sort input[type="text"] {
   padding: 10px;
   border: 2px solid #ccc;
   border-radius: 10px;
   width: 200px;
 }
+
 .search-sort select {
   padding: 10px;
   border: 2px solid #ccc;
   border-radius: 10px;
 }
+
 .search-sort button {
   background: #3B82F6;
   color: #fff;
@@ -187,6 +213,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
+
 .search-sort button:hover {
   background: #06B6D4;
 }
@@ -198,10 +225,11 @@ body {
   margin: 20px auto;
   max-width: 900px;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   position: relative;
   overflow: hidden;
 }
+
 .gallery-container::after {
   content: "";
   position: absolute;
@@ -213,6 +241,7 @@ body {
   clip-path: polygon(0 0, 100% 0, 0 100%);
   opacity: 0.2;
 }
+
 .gallery-container h2 {
   text-align: center;
   margin-top: 0;
@@ -227,13 +256,17 @@ body {
   grid-gap: 15px;
   margin-top: 20px;
 }
+
 .gallery img {
   width: 100%;
-  height: auto;
+  min-height: 194px;
+  max-height: 194px;
+  object-fit: contain;
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
+
 .gallery img:hover {
   transform: scale(1.05);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -252,10 +285,17 @@ body {
   background-color: rgba(0, 0, 0, 0.7);
   animation: fadeIn 0.3s ease;
 }
+
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
+
 .modal-content {
   background: #fff;
   margin: 10% auto;
@@ -267,10 +307,19 @@ body {
   position: relative;
   animation: slideIn 0.4s ease;
 }
+
 @keyframes slideIn {
-  from { transform: translateY(-20px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
+
 .close {
   color: #aaa;
   position: absolute;
@@ -281,15 +330,18 @@ body {
   cursor: pointer;
   transition: color 0.3s ease;
 }
+
 .close:hover,
 .close:focus {
   color: #000;
 }
+
 .modal-content p {
   font-size: 1.2em;
   margin-bottom: 20px;
   color: #333;
 }
+
 .modal-content a {
   display: inline-block;
   background: linear-gradient(135deg, #3B82F6, #06B6D4);
@@ -299,10 +351,12 @@ body {
   border-radius: 50px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .modal-content a:hover {
   transform: scale(1.05);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
+
 .modal-content button {
   background: #f44336;
   color: #fff;
@@ -313,6 +367,7 @@ body {
   margin-top: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .modal-content button:hover {
   transform: scale(1.05);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -320,24 +375,22 @@ body {
 
 /* Image Name Overlay */
 .image-name {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  color: white;
-  text-align: center;
-  padding: 5px;
-  font-size: 14px;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  height: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: #06B6D4;
+  padding: 4px;
+  border-radius: 10px;
+  height: fit-content;
 }
-.gallery-item:hover .image-name {
-  opacity: 1;
-}
+
+
 
 /* MEDIA QUERIES FOR RESPONSIVENESS */
 @media (max-width: 768px) {
+
   .auth-container,
   .upload-container,
   .gallery-container {
@@ -366,14 +419,14 @@ body {
   body {
     padding: 10px;
   }
-  
+
   .auth-container,
   .upload-container,
   .gallery-container {
     max-width: 100%;
     padding: 15px;
   }
-  
+
   .auth-container input[type="text"],
   .auth-container input[type="password"],
   .search-sort input[type="text"],
@@ -381,7 +434,7 @@ body {
     font-size: 0.9em;
     padding: 8px;
   }
-  
+
   .auth-container button,
   .upload-container button,
   .search-sort button,
