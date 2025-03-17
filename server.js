@@ -95,7 +95,7 @@ app.post('/login', (req, res) => {
 
 
 // Upload endpoint (protected) – accepts multiple files.
-app.post('/upload', upload.array('images', 10), (req, res) => {
+app.post('/upload', upload.array('files', 10), (req, res) => {
   const user = req.query.user;
   console.log({user});
   
