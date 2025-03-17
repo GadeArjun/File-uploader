@@ -162,6 +162,7 @@ body {
 
 /* Search & Sort */
 .search-sort {
+  flex-wrap: wrap;
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -317,9 +318,7 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-
-
-
+/* Image Name Overlay */
 .image-name {
   position: absolute;
   bottom: 0;
@@ -333,7 +332,62 @@ body {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
-
 .gallery-item:hover .image-name {
   opacity: 1;
+}
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+@media (max-width: 768px) {
+  .auth-container,
+  .upload-container,
+  .gallery-container {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .auth-container h1,
+  .upload-container h1,
+  .gallery-container h2 {
+    font-size: 1.5em;
+  }
+
+  .search-sort input[type="text"],
+  .search-sort select {
+    width: 150px;
+    padding: 8px;
+  }
+
+  .search-sort button {
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+  
+  .auth-container,
+  .upload-container,
+  .gallery-container {
+    max-width: 100%;
+    padding: 15px;
+  }
+  
+  .auth-container input[type="text"],
+  .auth-container input[type="password"],
+  .search-sort input[type="text"],
+  .search-sort select {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+  
+  .auth-container button,
+  .upload-container button,
+  .search-sort button,
+  .modal-content a,
+  .modal-content button {
+    font-size: 0.9em;
+    padding: 8px 12px;
+  }
 }
