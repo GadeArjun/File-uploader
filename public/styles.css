@@ -9,6 +9,30 @@
   box-sizing: border-box;
 }
 
+/* Disable zooming */
+html, body {
+  touch-action: none; /* Prevent pinch-to-zoom */
+  user-scalable: no; /* Disable zooming */
+  -ms-touch-action: manipulation;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Disable text selection */
+* {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Optional: Disable double-tap zoom */
+a, button, input, textarea {
+  touch-action: manipulation;
+}
+
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
