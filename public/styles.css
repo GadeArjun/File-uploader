@@ -12,12 +12,12 @@
 /* Disable zooming */
 html, body {
   touch-action: none; /* Prevent pinch-to-zoom */
-  user-scalable: no; /* Disable zooming */
+  
   -ms-touch-action: manipulation;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  
 }
 
 /* Disable text selection */
